@@ -7,15 +7,15 @@
 const email = prompt("Inserisci la tua email");
 let find = false;
 // array creation
-const accessEmailList = ["marta@gamil.com", "luca@gmail.com", "andrea@gmail.com", "irene@gmail.com", "franco@gmail.com"];
+const accessEmailList = ["marta@gmail.com", "luca@gmail.com", "andrea@gmail.com", "irene@gmail.com", "franco@gmail.com"];
 // for cycle
 for (let i = 0; i < accessEmailList.length; i++) {
     if (email == accessEmailList[i]) {
         find = true;
     }
 }
-if (!find) {
-    alert("ooooohhhhhh nooooo");
+if (find) {
+    alert("You are in the list");
 } else {
-    alert("yeah");
+    alert("You are not in the list");
 }
